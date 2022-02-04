@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0113)https://hzmetro-web-app.mtros.cn/sterilized/user/index.html#/020201?continueFlag=c2d579c86e4158fd6dea390925c8c050 -->
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -21,9 +20,15 @@
 									</h3>
 									<div role="separator" class="van-divider van-divider--hairline"></div>
 									<div style="text-align: left; margin-top: 20px;">
-										<p
-											style="padding: 0px; margin: 5px 0px 0px; font-size: 17px; line-height: 25px;text-align: center;">
-											<span style="font-weight: 700;">学校：</span><span>杭州育才中学</span></p>
+										<p style="padding: 0px; margin: 5px 0px 0px; font-size: 17px; line-height: 25px;text-align: center;">
+											<span style="font-weight: 700;">学校：</span><span>杭州育才中学</span><br />
+											<span style="font-weight: 700;">班级：</span><span>初一（8）班</span><br />
+											<span style="font-weight: 700;">姓名：</span><span id="name"></span><br />
+											<span style="font-weight: 700;">学号：</span><span id="number"></span><br />
+											<span style="font-weight: 700;">性别：</span><span id="gender"></span><br />
+											<span style="font-weight: 700;">智学网准考证号：</span><span id=""></span><br />
+											<span style="font-weight: 700;">云育才账号：</span><span id=""></span>
+										</p>
 									</div>
 									
 										<div role="separator" class="van-divider van-divider--hairline"></div>
@@ -46,7 +51,18 @@
 				s = t.getHours() < 10 ? "0" + t.getHours() : t.getHours(),
 				i = t.getMinutes() < 10 ? "0" + t.getMinutes() : t.getMinutes(),
 				a = t.getSeconds() < 10 ? "0" + t.getSeconds() : t.getSeconds();
-			this.monthDate = e + "月" + n + "日", this.hoursMinute = s + ":" + i + ":" + a
+			var htmltime=document.getElementById("time");
+			htmltime.innerHTML = e + "月" + n + "日"+"<br>"+ s + ":" + i + ":" + a;
+			setInterval(function() { 
+			   var t = new Date,
+			   	e = t.getMonth() + 1,
+			   	n = t.getDate(),
+			   	s = t.getHours() < 10 ? "0" + t.getHours() : t.getHours(),
+			   	i = t.getMinutes() < 10 ? "0" + t.getMinutes() : t.getMinutes(),
+			   	a = t.getSeconds() < 10 ? "0" + t.getSeconds() : t.getSeconds();
+			   var htmltime=document.getElementById("time");
+			   htmltime.innerHTML = e + "月" + n + "日"+"<br>"+ s + ":" + i + ":" + a;
+			}, 1000);
 		</script>
 	</body>
 </html>
