@@ -2,8 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta name="viewport"
-			content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover,no-referrer">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
 		<title>信息码</title>
 		<link href="css.css" rel="stylesheet">
 	</head>
@@ -16,7 +15,8 @@
 							<!---->
 							<div class="el-card__body">
 								<div style="width: calc(100%); text-align: center;">
-									<h3 style="padding: 0px 0px 0px; margin: 0px; font-size: 60px;" id="time">时间获取中…
+									<h3 style="padding: 0px 0px 0px; margin: 0px; font-size: 60px;font-family:sans-serif,Helvetica,Arial;" id="time">
+										时间获取中…
 									</h3>
 									<div role="separator" class="van-divider van-divider--hairline"></div>
 									<div style="text-align: left; margin-top: 20px;">
@@ -36,7 +36,7 @@
 											提示：使用本功能查询得到的数据仅供参考！
 										</div>
 										<div style="color: #6f6f6f;">
-											由<a href="https://github.com/tim1103/" style="color: #6f6f6f;text-decoration:underline">tim1103</a>出品
+											V0.0.6 由<a href="https://github.com/tim1103/" style="color: #6f6f6f;text-decoration:underline">tim1103</a>出品
 										</div>
 										<div style="color: #6f6f6f;">
 											<a href="https://github.com/tim1103/Personal-Information-Code" style="color: #6f6f6f;text-decoration:underline">开源地址</a> <a href="https://github.com/tim1103/Personal-Information-Code/wiki/Q&A" style="color: #6f6f6f;text-decoration:underline">常见问题</a>
@@ -76,7 +76,7 @@
 				}
 				return null;
 			}
-			// 这样调用：
+			// 调用
 			var htmlname=document.getElementById("name");
 			htmlname.innerHTML = GetQueryString("name");
 			var htmlnumber=document.getElementById("number");
