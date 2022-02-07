@@ -33,9 +33,9 @@
 											<span style="font-weight: 700;">性别：</span><span id="gender"></span><br />
 											<span style="font-weight: 700;">智学网准考证号：</span><span id="zxw"></span><br />
 											<span style="font-weight: 700;">云育才账号：</span><span id="yyc"></span><br />
-											<span style="font-weight: 700;">民族：</span><span id="mz"></span><br />
+											<!--<span style="font-weight: 700;">民族：</span><span id="mz"></span><br />-->
 											<span style="font-weight: 700;">出生年月：</span><span id="cs"></span><br />
-											<span style="font-weight: 700;">籍贯：</span><span id="jg"></span>
+											<!--<span style="font-weight: 700;">籍贯：</span><span id="jg"></span>-->
 			
 										</p>
 									</div>
@@ -45,7 +45,7 @@
 											提示：使用本功能查询得到的数据仅供参考！
 										</div>
 										<div style="color: #6f6f6f;">
-											V0.1.4 2022年2月6日更新
+											V0.1.5 2022年2月7日更新
 										</div>
 										<div style="color: #6f6f6f;">
 											<a href="https://github.com/tim1103/Personal-Information-Code" style="color: #6f6f6f;text-decoration:underline">开源地址</a> <a href="https://github.com/tim1103/Personal-Information-Code/wiki/Q&A" style="color: #6f6f6f;text-decoration:underline">常见问题</a>
@@ -67,7 +67,7 @@
 				a = t.getSeconds() < 10 ? "0" + t.getSeconds() : t.getSeconds();
 			var htmltime=document.getElementById("time");
 			htmltime.innerHTML = e + "月" + n + "日"+"<br>"+ s + ":" + i + ":" + a;
-			setInterval(function() { 
+			/*setInterval(function() { 
 			   var t = new Date,
 			   	e = t.getMonth() + 1,
 			   	n = t.getDate(),
@@ -76,7 +76,7 @@
 			   	a = t.getSeconds() < 10 ? "0" + t.getSeconds() : t.getSeconds();
 			   var htmltime=document.getElementById("time");
 			   htmltime.innerHTML = e + "月" + n + "日"+"<br>"+ s + ":" + i + ":" + a;
-			}, 1000);
+			}, 1000);*/
 			function GetQueryString(name) {
 				var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
 				var r = window.location.search.substr(1).match(reg);
@@ -96,12 +96,12 @@
 			htmlzxw.innerHTML = GetQueryString("zxw");
 			var htmlyyc=document.getElementById("yyc");
 			htmlyyc.innerHTML = GetQueryString("yyc");
-			var htmlmz=document.getElementById("mz");
-			htmlmz.innerHTML = GetQueryString("mz");
+			//var htmlmz=document.getElementById("mz");
+			//htmlmz.innerHTML = GetQueryString("mz");
 			var htmlcs=document.getElementById("cs");
 			htmlcs.innerHTML = GetQueryString("cs");
-			var htmljg=document.getElementById("jg");
-			htmljg.innerHTML = GetQueryString("jg");
+			//var htmljg=document.getElementById("jg");
+			//htmljg.innerHTML = GetQueryString("jg");
 			
 			var htmlcov=document.getElementById("cov");
 			if(htmlnumber.innerHTML==27||htmlnumber.innerHTML==38||htmlnumber.innerHTML==23||htmlnumber.innerHTML==14||htmlnumber.innerHTML==2||htmlnumber.innerHTML==21){
