@@ -5,40 +5,47 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,,viewport-fit=cover">
 		<title>信息码</title>
 		<link rel="shortcut icon" href="favicon.ico">
-		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	</head>
 	<style>
 		body {
 			background-color: #fbf9fe
 		}
+
 		.el-card,
 		.el-message {
 			border-radius: 10px !important;
 			overflow: hidden
 		}
+
 		.el-card__body {
 			padding: 15px !important
 		}
+
 		.main-top {
 			padding: 25px 15px 15px;
 			height: 100%;
 			background-image: linear-gradient(180deg, #4c4ce7 207px, #fdfdfd 0)
 		}
+
 		html {
 			-webkit-tap-highlight-color: transparent
 		}
+
 		body {
 			margin: 0
 		}
+
 		a {
 			text-decoration: none
 		}
+
 		button,
 		input,
 		textarea {
 			color: inherit;
 			font: inherit
 		}
+
 		.van-divider {
 			display: -webkit-box;
 			display: flex;
@@ -50,45 +57,51 @@
 			line-height: 24px;
 			border: 0 solid #ebedf0
 		}
+
 		.el-card {
 			border: 1px solid #ebeef5;
 			background-color: #fff;
 			color: #303133;
 			transition: .3s
 		}
+
 		.el-card.is-always-shadow,
 		.el-card.is-hover-shadow:focus,
 		.el-card.is-hover-shadow:hover {
 			box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1)
 		}
+
 		.el-card__body {
 			padding: 20px
 		}
-		
 	</style>
 	<body>
 		<div>
 			<div>
 				<div align="center" class="main-top">
 					<div style="text-align: left;">
-						<div class="el-card is-always-shadow">
+						<div class="el-card is-always-shadow ">
 							<!---->
 							<div class="el-card__body">
 								<div style="width: calc(100%); text-align: center;">
-									<h3 style="padding: 0px 0px 0px; margin: 0px; font-size: 60px;font-family:PingFang SC Bold,sans-serif,Helvetica,Arial;line-height: 75px;word-wrap: break-word;word-break:normal" id="time">
+									<h3 style="padding: 0px 0px 0px; margin: 0px; font-size: 60px;font-family:PingFang SC Bold,sans-serif,Helvetica,Arial;line-height: 75px;word-wrap: break-word;word-break:normal"
+										id="time">
 										时间获取中…
 									</h3>
 									<div role="separator" class="van-divider van-divider--hairline"></div>
 									<div style="text-align: left; margin-top: 20px;">
-										<div style="padding: 0px; margin: 5px 0px 0px; font-size: 30px; font-weight: 700; color: #ff0000; text-align: center;" >
+										<div
+											style="padding: 0px; margin: 5px 0px 0px; font-size: 30px; font-weight: 700; color: #ff0000; text-align: center;">
 											本服务不能替代"健康码"等防疫服务！
 										</div>
 										<div role="separator" class="van-divider van-divider--hairline"></div>
-										<div style="padding: 0px; margin: 5px 0px 0px; font-size: 30px; font-weight: 700; color: #4caf50; text-align: center;" id="cov">
-											
+										<div style="padding: 0px; margin: 5px 0px 0px; font-size: 30px; font-weight: 700; color: #4caf50; text-align: center;"
+											id="cov">
+
 										</div>
-										<p style="padding: 0px; margin: 5px 0px 0px; font-size: 17px; line-height: 25px;text-align: center;">
-											
+										<p
+											style="padding: 0px; margin: 5px 0px 0px; font-size: 17px; line-height: 25px;text-align: center;">
+
 											<span style="font-weight: 700;">学校：</span><span>杭州育才中学</span><br />
 											<span style="font-weight: 700;">班级：</span><span>初一（8）班</span><br />
 											<span style="font-weight: 700;">姓名：</span><span id="name"></span><br />
@@ -99,36 +112,40 @@
 											<!--<span style="font-weight: 700;">民族：</span><span id="mz"></span><br />-->
 											<span style="font-weight: 700;">出生年月：</span><span id="cs"></span><br />
 											<!--<span style="font-weight: 700;">籍贯：</span><span id="jg"></span>-->
-			
+
 										</p>
 									</div>
-									
-										
-									</div>
-								</div> 
+
+
+								</div>
 							</div>
-							<!--<div role="separator" class="van-divider van-divider--hairline "></div>-->
-							<br />
-							<div style="text-align: center;">
-								<!--<button type="button" onclick="Swal.fire( '应用正在开发中', '先看看别的吧~', 'error' )" style="width: 100%;background-color:#4490f7;border:none;color:white ;height: 35px;border-radius: 17.5px;margin-bottom: 9px;">更多应用</button>
-								<br />-->
-								<div style="font-size: 18px;">
-									提示：使用本功能查询得到的数据仅供参考！
-								</div>
-								<div style="color: #6f6f6f;">
-									V0.1.9 2022年2月9日更新
-								</div>
-								<div style="color: #6f6f6f;">
-									<a href="https://github.com/tim1103/Personal-Information-Code" style="color: #6f6f6f;text-decoration:underline">开源地址</a> <a href="https://github.com/tim1103/Personal-Information-Code/wiki/Q&A" style="color: #6f6f6f;text-decoration:underline">常见问题</a>
-								</div>
-								
-							</div>
-							
 						</div>
-					</div> 
+						<!--<div role="separator" class="van-divider van-divider--hairline "></div>-->
+						<br />
+						<div style="text-align: center;">
+							<!--<button type="button" onclick="Swal.fire( '应用正在开发中', '先看看别的吧~', 'error' )" style="width: 100%;background-color:#4490f7;border:none;color:white ;height: 35px;border-radius: 17.5px;margin-bottom: 9px;">更多应用</button>
+								<br />-->
+							<div style="font-size: 18px;">
+								提示：使用本功能查询得到的数据仅供参考！
+							</div>
+							<div style="color: #6f6f6f;">
+								V0.2.0 2022年2月9日更新
+							</div>
+							<div style="color: #6f6f6f;">
+								<a href="https://github.com/tim1103/Personal-Information-Code"
+									style="color: #6f6f6f;text-decoration:underline">开源地址</a> <a
+									href="https://github.com/tim1103/Personal-Information-Code/wiki/Q&A"
+									style="color: #6f6f6f;text-decoration:underline">常见问题</a>
+							</div>
+
+						</div>
+
+					</div>
 				</div>
 			</div>
 		</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 		<script>
 			var t = new Date,
 				e = t.getMonth() + 1,
@@ -136,9 +153,9 @@
 				s = t.getHours() < 10 ? "0" + t.getHours() : t.getHours(),
 				i = t.getMinutes() < 10 ? "0" + t.getMinutes() : t.getMinutes(),
 				a = t.getSeconds() < 10 ? "0" + t.getSeconds() : t.getSeconds();
-			var htmltime=document.getElementById("time");
-			htmltime.innerHTML = e + "月" + n + "日"+"<br>"+ s + ":" + i + ":" + a;
-			
+			var htmltime = document.getElementById("time");
+			htmltime.innerHTML = e + "月" + n + "日" + "<br>" + s + ":" + i + ":" + a;
+
 			function GetQueryString(name) {
 				var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
 				var r = window.location.search.substr(1).match(reg);
@@ -147,55 +164,75 @@
 				}
 				return null;
 			}
-			
-			var htmlname=document.getElementById("name");
+
+			var htmlname = document.getElementById("name");
 			htmlname.innerHTML = GetQueryString("name");
-			var htmlnumber=document.getElementById("number");
+			var htmlnumber = document.getElementById("number");
 			htmlnumber.innerHTML = GetQueryString("number");
-			var htmlgender=document.getElementById("gender");
+			var htmlgender = document.getElementById("gender");
 			htmlgender.innerHTML = GetQueryString("gender");
-			var htmlzxw=document.getElementById("zxw");
+			var htmlzxw = document.getElementById("zxw");
 			htmlzxw.innerHTML = GetQueryString("zxw");
-			var htmlyyc=document.getElementById("yyc");
+			var htmlyyc = document.getElementById("yyc");
 			htmlyyc.innerHTML = GetQueryString("yyc");
 			//var htmlmz=document.getElementById("mz");
 			//htmlmz.innerHTML = GetQueryString("mz");
-			var htmlcs=document.getElementById("cs");
+			var htmlcs = document.getElementById("cs");
 			htmlcs.innerHTML = GetQueryString("cs");
 			//var htmljg=document.getElementById("jg");
 			//htmljg.innerHTML = GetQueryString("jg");
-			
-			var htmlcov=document.getElementById("cov");
-			if(htmlnumber.innerHTML==27||htmlnumber.innerHTML==38||htmlnumber.innerHTML==23||htmlnumber.innerHTML==14||htmlnumber.innerHTML==2||htmlnumber.innerHTML==21){
+
+			var htmlcov = document.getElementById("cov");
+			if (htmlnumber.innerHTML == 27 || htmlnumber.innerHTML == 38 || htmlnumber.innerHTML == 23 || htmlnumber.innerHTML ==
+				14 || htmlnumber.innerHTML == 2 || htmlnumber.innerHTML == 21) {
 				htmlcov.innerHTML = "未接种新冠疫苗";
-				htmlcov.style.color='#bb9858'
-			}else if(htmlnumber.innerHTML!=0){
+				htmlcov.style.color = '#bb9858'
+			} else if (htmlnumber.innerHTML != 0) {
 				htmlcov.innerHTML = "已完成新冠疫苗接种";
-			}else{
+			} else {
 				//Swal.fire( '疫苗接种信息获取失败', '请检查扫码是否成功', 'error' )
 				htmlcov.innerHTML = "疫苗接种信息获取失败";
-				htmlcov.style.color='#f44336'
+				htmlcov.style.color = '#f44336'
 			}
 			setInterval(function() {
-			   var t = new Date,
-			   	e = t.getMonth() + 1,
-			   	n = t.getDate(),
-			   	s = t.getHours() < 10 ? "0" + t.getHours() : t.getHours(),
-			   	i = t.getMinutes() < 10 ? "0" + t.getMinutes() : t.getMinutes(),
-			   	a = t.getSeconds() < 10 ? "0" + t.getSeconds() : t.getSeconds();
-			   var htmltime=document.getElementById("time");
-			   htmltime.innerHTML = e + "月" + n + "日"+"<br>"+ s + ":" + i + ":" + a;
+				var t = new Date,
+					e = t.getMonth() + 1,
+					n = t.getDate(),
+					s = t.getHours() < 10 ? "0" + t.getHours() : t.getHours(),
+					i = t.getMinutes() < 10 ? "0" + t.getMinutes() : t.getMinutes(),
+			 	a = t.getSeconds() < 10 ? "0" + t.getSeconds() : t.getSeconds();
+				var htmltime = document.getElementById("time");
+				htmltime.innerHTML = e + "月" + n + "日" + "<br>" + s + ":" + i + ":" + a;
 			}, 1000);
-			if(document.documentElement.clientWidth<110){
-				htmltime.style.fontSize='inherit';
-				htmltime.style.lineHeight='calc(120%)';
+			if (document.documentElement.clientWidth < 110) {
+				htmltime.style.fontSize = 'inherit';
+				htmltime.style.lineHeight = 'calc(120%)';
 			}
-			if(GetQueryString("name")==null ||GetQueryString("number")==null||GetQueryString("gender")==null){
-				Swal.fire( '信息获取失败', '请检查扫码是否成功', 'error' )
+			if (GetQueryString("name") == null || GetQueryString("number") == null || GetQueryString("gender") == null) {
+				Swal.fire('信息获取失败', '请检查扫码是否成功', 'error')
 			}
 			console.log("本项目为开源项目，开源地址: https://github.com/tim1103/Personal-Information-Code");
-			var userAgent = window.navigator.userAgent; 
+			var userAgent = window.navigator.userAgent;
 			console.log(userAgent);
 		</script>
+		<!--<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.4.0/lib/darkmode-js.js"></script>
+		<script>
+			const options = {
+				bottom: '32px', // default: '32px'
+				right: '32px', // default: '32px'
+				left: 'unset', // default: 'unset'
+				time: '0.3s', // default: '0.3s'
+				mixColor: '#fff', // default: '#fff'
+				backgroundColor: '#fff', // default: '#fff'
+				buttonColorDark: '#100f2c', // default: '#100f2c'
+				buttonColorLight: '#fff', // default: '#fff'
+				saveInCookies: false, // default: true,
+				label: '🌓', // default: 
+				autoMatchOsTheme: true // default: true
+			}
+
+			const darkmode = new Darkmode(options);
+			darkmode.showWidget();
+		</script>-->
 	</body>
 </html>
