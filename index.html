@@ -3,6 +3,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,,viewport-fit=cover">
+		<meta name="description" content="信息码">
 		<title>信息码</title>
 		<link rel="shortcut icon" href="favicon.ico">
 	</head>
@@ -45,7 +46,6 @@
 			color: inherit;
 			font: inherit
 		}
-
 		.van-divider {
 			display: -webkit-box;
 			display: flex;
@@ -113,7 +113,6 @@
 
 										</div>
 										<div style="text-align: center;">
-										<svg t="1644578521817" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1517" width="200" height="200" style="text-align: center;"><path d="M926 215.173333l-384-170.666666a21.333333 21.333333 0 0 0-17.333333 0l-384 170.666666A21.333333 21.333333 0 0 0 128 234.666667v217.813333c0 219.866667 129.373333 419.02 329.6 507.333333 32.793333 14.466667 57.566667 21.5 75.733333 21.5s42.94-7.033333 75.733334-21.5c200.226667-88.333333 329.6-287.486667 329.6-507.333333V234.666667a21.333333 21.333333 0 0 0-12.666667-19.493334z m-206.913333 205.246667l-213.333334 213.333333a21.333333 21.333333 0 0 1-30.173333 0l-128-128a21.333333 21.333333 0 0 1 30.173333-30.173333L490.666667 588.5l198.246666-198.253333a21.333333 21.333333 0 1 1 30.173334 30.173333z" fill="#009e3d" p-id="1518"></path></svg>
 										</div>
 										<p style="padding: 0px; margin: 5px 0px 0px; font-size: 17px; line-height: 25px;text-align: center;">
 
@@ -128,6 +127,8 @@
 											<span style="font-weight: 700;">出生年月：</span><span id="cs"></span><br />
 											<!--<span style="font-weight: 700;">籍贯：</span><span id="jg"></span>-->
 										</p>
+										
+										
 									</div>
 
 
@@ -143,7 +144,10 @@
 								提示：使用本功能查询得到的数据仅供参考！
 							</div>
 							<div style="color: #6f6f6f;">
-								V0.2.3 2022年2月11日更新
+								扫码时间：<span id="st"></span>
+							</div>
+							<div style="color: #6f6f6f;">
+								V0.2.4 2022年2月12日更新
 							</div>
 							<div style="color: #6f6f6f;">
 								<a href="https://github.com/tim1103/Personal-Information-Code"
@@ -169,7 +173,8 @@
 				a = t.getSeconds() < 10 ? "0" + t.getSeconds() : t.getSeconds();
 			var htmltime = document.getElementById("time");
 			htmltime.innerHTML = e + "月" + n + "日" + "<br>" + s + ":" + i + ":" + a;
-
+			var htmlst = document.getElementById("st");
+			htmlst.innerHTML = e + "月" + n + "日" +" " + s + ":" + i + ":" + a;
 			function GetQueryString(name) {
 				var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
 				var r = window.location.search.substr(1).match(reg);
@@ -214,6 +219,9 @@
 				htmlcov.innerHTML = "疫苗接种信息获取失败";
 				htmlcov.style.color = '#f44336'
 			}
+		
+			
+
 			setInterval(function() {
 				var t = new Date,
 					e = t.getMonth() + 1,
@@ -232,27 +240,8 @@
 				Swal.fire('信息获取失败', '请检查扫码是否成功', 'error')
 			}
 			console.log("本项目为开源项目，开源地址: https://github.com/tim1103/Personal-Information-Code");
-			var userAgent = window.navigator.userAgent;
-			console.log(userAgent);
+			//var userAgent = window.navigator.userAgent;
+			//console.log(userAgent);
 		</script>
-		<!--<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.4.0/lib/darkmode-js.js"></script>
-		<script>
-			const options = {
-				bottom: '32px', // default: '32px'
-				right: '32px', // default: '32px'
-				left: 'unset', // default: 'unset'
-				time: '0.3s', // default: '0.3s'
-				mixColor: '#fff', // default: '#fff'
-				backgroundColor: '#fff', // default: '#fff'
-				buttonColorDark: '#100f2c', // default: '#100f2c'
-				buttonColorLight: '#fff', // default: '#fff'
-				saveInCookies: false, // default: true,
-				label: '🌓', // default: 
-				autoMatchOsTheme: true // default: true
-			}
-
-			const darkmode = new Darkmode(options);
-			darkmode.showWidget();
-		</script>-->
 	</body>
 </html>
