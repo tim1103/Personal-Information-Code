@@ -22,7 +22,7 @@
 		.main-top {
 			padding: 25px 15px 15px;
 			height: 100%;
-			background-image: linear-gradient(180deg, #4c4ce7 207px, #fdfdfd 0)
+			background-image: linear-gradient(180deg, #4c4ce7 100px, #fdfdfd 0)
 		}
 		html {
 			-webkit-tap-highlight-color: transparent
@@ -82,6 +82,20 @@
 			width: auto\9; 
 			width:100%;
 		}
+		#hname{
+			display:inline;
+			position:absolute;
+			left: 25px;
+			top: 30px;
+			text-align: unset;
+		}
+		#hnum{
+			display:inline;
+			position:absolute;
+			right: 25px;
+			top: 30px;
+			text-align: unset;
+		}
 	</style>
 	<body>
 		<div>
@@ -92,34 +106,32 @@
 							<!---->
 							<div class="el-card__body">
 								<div style="width: calc(100%); text-align: center;">
-									<h3 style="padding: 0px 0px 0px; margin: 0px; font-size: 60px;font-family:PingFang SC Bold,sans-serif,Helvetica,Arial;line-height: 75px;word-wrap: break-word;word-break:normal"
+									<!--<h3 style="padding: 0px 0px 0px; margin: 0px; font-size: 60px;font-family:PingFang SC Bold,sans-serif,Helvetica,Arial;line-height: 75px;word-wrap: break-word;word-break:normal"
 										id="time">
 										时间获取中…
 									</h3>
-									<div role="separator" class="van-divider van-divider--hairline"></div>
-									<div style="text-align: left; margin-top: 20px;">
-										<div
+									<div role="separator" class="van-divider van-divider--hairline"></div>-->
+									<div>
+										<!--<div
 											style="padding: 0px; margin: 5px 0px 0px; font-size: 30px; font-weight: 700; color: #ff0000; text-align: center;word-wrap: break-word;word-break:normal">
 											本服务不能替代"健康码"等防疫服务！
-										</div>
-										<div role="separator" class="van-divider van-divider--hairline"></div>
-										<div style="padding: 0px; margin: 5px 0px 0px; font-size: 30px; font-weight: 700; color: #0055ff; text-align: center;"
+										</div>-->
+										
+										<!--<div style="padding: 0px; margin: 5px 0px 0px; font-size: 30px; font-weight: 700; color: #0055ff; text-align: center;"
 											id="cov">
 
-										</div>
-										<div style="text-align: center;">
-										</div>
-										<p style="padding: 0px; margin: 5px 0px 0px; font-size: 17px; line-height: 25px;text-align: center;">
-
-											<span style="font-weight: 700;">学校：</span><span>杭州育才中学</span><br />
-											<span style="font-weight: 700;">班级：</span><span>初一（8）班</span><br />
-											<span style="font-weight: 700;">姓名：</span><span id="name"></span><br />
-											<span style="font-weight: 700;">学号：</span><span id="number"></span><br />
-											<span style="font-weight: 700;">性别：</span><span id="gender"></span><br />
+										</div>-->
+										<div style="font-weight: 700;" id="hname"><span id="name"></span></div>
+										<div style="font-weight: 700;" id="hnum"><span id="number"></span></div>
+										<p style="padding: 1em; margin: 0px 0px 0px; font-size: 17px; line-height: 25px;text-align: center;">
+											<!--<span style="font-weight: 700;">学校：</span><span>杭州育才中学</span><br />
+											<span style="font-weight: 700;">班级：</span><span>初一（8）班</span><br />-->
+											
+											<!--<span style="font-weight: 700;">性别：</span><span id="gender"></span><br />-->
 											<span style="font-weight: 700;">智学网准考证号：</span><span id="zxw"></span><br />
 											<span style="font-weight: 700;">云育才账号：</span><span id="yyc"></span><br />
 											<!--<span style="font-weight: 700;">民族：</span><span id="mz"></span><br />-->
-											<span style="font-weight: 700;">出生年月：</span><span id="cs"></span><br />
+											<!--<span style="font-weight: 700;">出生年月：</span><span id="cs"></span><br />-->
 											<!--<span style="font-weight: 700;">籍贯：</span><span id="jg"></span>-->
 										</p>
 									</div>
@@ -129,27 +141,28 @@
 						<!--<div role="separator" class="van-divider van-divider--hairline "></div>-->
 						<br />
 						<div style="text-align: center;">
-							<button type="button" onclick="button_click()" style="width: 100%;background-color:#4490f7;border:none;color:white ;height: 35px;border-radius: 17.5px;margin-bottom: 9px;">生成二维码</button>
-								<br />
+							<!--<button type="button" onclick="button_click()" style="width: 100%;background-color:#4490f7;border:none;color:white ;height: 35px;border-radius: 17.5px;margin-bottom: 9px;">生成二维码</button>-->
 								<div align="center">
-									<img src="https://s4.ax1x.com/2022/02/14/H6uRER.md.png" style="border-radius: 10px;display: block;max-width: 500px" id="notice" alt="图片加载失败"/>
+									<a href="https://registernaes.wsjkw.zj.gov.cn/userinfo/">
+										<img src="https://s1.ax1x.com/2022/06/17/Xq3xns.md.png" style="border-radius: 10px;display: block;max-width: 500px" id="notice" alt="图片加载失败"/>
+									</a>
 								</div>
 							
-							<div style="font-size: 18px;">
+							<div style="font-size: 18px;margin-top: 5px;">
 								提示：使用本功能查询得到的数据仅供参考！
 							</div>
 							<div style="color: #6f6f6f;">
 								扫码时间：<span id="st"></span>
 							</div>
 							<div style="color: #6f6f6f;">
-								V0.2.7 2022年2月14日更新
+								V0.2.8 2022年6月17日更新
 							</div>
-							<div style="color: #6f6f6f;">
+							<!--<div style="color: #6f6f6f;">
 								<a href="https://github.com/tim1103/Personal-Information-Code"
 									style="color: #6f6f6f;text-decoration:underline">开源地址</a> <a
 									href="https://github.com/tim1103/Personal-Information-Code/wiki/Q&A"
 									style="color: #6f6f6f;text-decoration:underline">常见问题</a>
-							</div>
+							</div>-->
 
 						</div>
 
@@ -167,8 +180,8 @@
 				s = t.getHours() < 10 ? "0" + t.getHours() : t.getHours(),
 				i = t.getMinutes() < 10 ? "0" + t.getMinutes() : t.getMinutes(),
 				a = t.getSeconds() < 10 ? "0" + t.getSeconds() : t.getSeconds();
-			var htmltime = document.getElementById("time");
-			htmltime.innerHTML = e + "月" + n + "日" + "<br>" + s + ":" + i + ":" + a;
+			//var htmltime = document.getElementById("time");
+			//htmltime.innerHTML = e + "月" + n + "日" + "<br>" + s + ":" + i + ":" + a;
 			var htmlst = document.getElementById("st");
 			htmlst.innerHTML = e + "月" + n + "日" +" " + s + ":" + i + ":" + a;
 			function GetQueryString(name) {
@@ -192,12 +205,12 @@
 			htmlyyc.innerHTML = GetQueryString("yyc");
 			//var htmlmz=document.getElementById("mz");
 			//htmlmz.innerHTML = GetQueryString("mz");
-			var htmlcs = document.getElementById("cs");
-			htmlcs.innerHTML = GetQueryString("cs");
+			//var htmlcs = document.getElementById("cs");
+			//htmlcs.innerHTML = GetQueryString("cs");
 			//var htmljg=document.getElementById("jg");
 			//htmljg.innerHTML = GetQueryString("jg");
 
-			var htmlcov = document.getElementById("cov");
+			/*var htmlcov = document.getElementById("cov");
 			
 			if (htmlnumber.innerHTML != 0) {
 				if (htmlnumber.innerHTML == 27 || htmlnumber.innerHTML == 38 || htmlnumber.innerHTML == 23 || htmlnumber.innerHTML ==
@@ -213,11 +226,11 @@
 			} else {
 				htmlcov.innerHTML = "疫苗接种信息获取失败";
 				htmlcov.style.color = '#f44336'
-			}
+			}*/
 		
 			
 
-			setInterval(function() {
+			/*setInterval(function() {
 				var t = new Date,
 					e = t.getMonth() + 1,
 					n = t.getDate(),
@@ -226,7 +239,7 @@
 			 	a = t.getSeconds() < 10 ? "0" + t.getSeconds() : t.getSeconds();
 				var htmltime = document.getElementById("time");
 				htmltime.innerHTML = e + "月" + n + "日" + "<br>" + s + ":" + i + ":" + a;
-			}, 1000);
+			}, 1000);*/
 			if (document.documentElement.clientWidth < 110) {
 				htmltime.style.fontSize = 'inherit';
 				htmltime.style.lineHeight = 'calc(120%)';
