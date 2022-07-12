@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,,viewport-fit=cover">
+		<meta name="description" content="信息码">
+		<title>信息码</title>
+
+	</head>
+	<script src="https://g.alicdn.com/dingding/dingtalk-jsapi/2.13.42/dingtalk.open.js"></script>
+	<script>
+		dd.ready(function() {
+			dd.biz.util.scan({
+				type: "all",
+				onSuccess: function(res) {
+					// 调用成功时回调
+					alert(res.text);
+					SCAN = res.text;
+				},
+				onFail: function(err) {
+					// 调用失败时回调
+					console.log(err);
+				}
+			});
+		});
+
+		/*function GetQueryString(name) {
+			var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+			var r = SCAN.search.substr(1).match(reg);
+			if (r != null) {
+				return decodeURI(r[2]);
+			}
+			return null;
+		}
+		//alert(GetQueryString("name")+GetQueryString("number")+GetQueryString("gender")+GetQueryString("zxw")+GetQueryString("yyc")+GetQueryString("mz")+GetQueryString("cs")+GetQueryString("jg"));
+		alert(GetQueryString("name"));*/
+	</script>
+	<script src="https://cdn.bootcss.com/vConsole/3.2.0/vconsole.min.js"></script>
+	<script>
+		new VConsole();
+	</script>
+</html>
