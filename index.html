@@ -226,7 +226,7 @@
 				htmltime.style.fontSize = 'inherit';
 				htmltime.style.lineHeight = 'calc(120%)';
 			}
-			if (GetQueryString("number") == null) {
+			if (GetQueryString("number") == null&GetQueryString("num") == null) {
 				Swal.fire('信息获取失败', '请检查扫码是否成功', 'error')
 			}
 			function hesuan() {
