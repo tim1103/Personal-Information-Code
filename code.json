@@ -1,0 +1,442 @@
+[{
+	"number": "1",
+	"name": "陈茁",
+	"gender": "男",
+	"zhixue": "89308468",
+	"yyc": "yc001210801",
+	"ethnic": "汉",
+	"birthday": "2009年1月",
+	"origin": "河北卢龙"
+}, {
+	"number": "2",
+	"name": "葛容一",
+	"gender": "男",
+	"zhixue": "89308469",
+	"yyc": "yc001210802",
+	"ethnic": "汉",
+	"birthday": "2009年7月",
+	"origin": "浙江杭州"
+}, {
+	"number": "3",
+	"name": "何晨阳",
+	"gender": "男",
+	"zhixue": "89308470",
+	"yyc": "yc001210803",
+	"ethnic": "汉",
+	"birthday": "2008年12月",
+	"origin": "浙江开化"
+}, {
+	"number": "4",
+	"name": "胡宸源",
+	"gender": "男",
+	"zhixue": "89308471",
+	"yyc": "yc001210804",
+	"ethnic": "汉",
+	"birthday": "2009年7月",
+	"origin": "浙江萧山"
+}, {
+	"number": "5",
+	"name": "李煜鑫",
+	"gender": "男",
+	"zhixue": "89308472",
+	"yyc": "yc001210805",
+	"ethnic": "汉",
+	"birthday": "2008年1月",
+	"origin": "浙江慈溪"
+}, {
+	"number": "6",
+	"name": "廖浚桦",
+	"gender": "男",
+	"zhixue": "89308473",
+	"yyc": "yc001210806",
+	"ethnic": "汉",
+	"birthday": "2009年7月",
+	"origin": "广西苍梧"
+}, {
+	"number": "7",
+	"name": "柳奇鑫",
+	"gender": "男",
+	"zhixue": "89308474",
+	"yyc": "yc001210807",
+	"ethnic": "汉",
+	"birthday": "2008年11月",
+	"origin": "浙江富阳"
+}, {
+	"number": "8",
+	"name": "楼运澄",
+	"gender": "男",
+	"zhixue": "89308475",
+	"yyc": "yc001210808",
+	"ethnic": "汉",
+	"birthday": "2009年7月",
+	"origin": "浙江永康"
+}, {
+	"number": "9",
+	"name": "罗逸洲",
+	"gender": "男",
+	"zhixue": "89308476",
+	"yyc": "yc001210809",
+	"ethnic": "汉",
+	"birthday": "2009年3月",
+	"origin": "浙江兰溪"
+}, {
+	"number": "10",
+	"name": "宋逸杰",
+	"gender": "男",
+	"zhixue": "89308477",
+	"yyc": "yc001210810",
+	"ethnic": "汉",
+	"birthday": "2009年3月",
+	"origin": "江西分宜"
+}, {
+	"number": "11",
+	"name": "王世博",
+	"gender": "男",
+	"zhixue": "89308478",
+	"yyc": "yc001210811",
+	"ethnic": "汉",
+	"birthday": "2008年1月",
+	"origin": "安徽蒙城"
+}, {
+	"number": "12",
+	"name": "王煜梵",
+	"gender": "男",
+	"zhixue": "89308479",
+	"yyc": "yc001210812",
+	"ethnic": "汉",
+	"birthday": "2008年11月",
+	"origin": "浙江杭州"
+}, {
+	"number": "13",
+	"name": "吴君杰",
+	"gender": "男",
+	"zhixue": "89308480",
+	"yyc": "yc001210813",
+	"ethnic": "汉",
+	"birthday": "2009年1月",
+	"origin": "重庆忠县"
+}, {
+	"number": "14",
+	"name": "徐诺",
+	"gender": "男",
+	"zhixue": "89308481",
+	"yyc": "yc001210814",
+	"ethnic": "汉",
+	"birthday": "2009年3月",
+	"origin": "浙江开化"
+}, {
+	"number": "15",
+	"name": "叶浩炜",
+	"gender": "男",
+	"zhixue": "89308482",
+	"yyc": "yc001210815",
+	"ethnic": "汉",
+	"birthday": "2009年7月",
+	"origin": "江西波阳"
+}, {
+	"number": "16",
+	"name": "应定邦",
+	"gender": "男",
+	"zhixue": "89308483",
+	"yyc": "yc001210816",
+	"ethnic": "汉",
+	"birthday": "2009年2月",
+	"origin": "浙江东阳"
+}, {
+	"number": "17",
+	"name": "袁逸凡",
+	"gender": "男",
+	"zhixue": "89308484",
+	"yyc": "yc001210817",
+	"ethnic": "汉",
+	"birthday": "2009年2月",
+	"origin": "湖北武汉"
+}, {
+	"number": "18",
+	"name": "章应祺",
+	"gender": "男",
+	"zhixue": "89308485",
+	"yyc": "yc001210818",
+	"ethnic": "汉",
+	"birthday": "2008年11月",
+	"origin": "安徽怀宁"
+}, {
+	"number": "19",
+	"name": "赵奕开",
+	"gender": "男",
+	"zhixue": "89308486",
+	"yyc": "yc001210819",
+	"ethnic": "汉",
+	"birthday": "2009年7月",
+	"origin": "浙江诸暨"
+}, {
+	"number": "20",
+	"name": "郑皓元",
+	"gender": "男",
+	"zhixue": "89308487",
+	"yyc": "yc001210820",
+	"ethnic": "汉",
+	"birthday": "2008年11月",
+	"origin": "浙江衢县"
+}, {
+	"number": "21",
+	"name": "周臣宫",
+	"gender": "男",
+	"zhixue": "89308488",
+	"yyc": "yc001210821",
+	"ethnic": "汉",
+	"birthday": "2008年9月",
+	"origin": "浙江杭州"
+}, {
+	"number": "22",
+	"name": "周诗浚",
+	"gender": "男",
+	"zhixue": "89308489",
+	"yyc": "yc001210822",
+	"ethnic": "汉",
+	"birthday": "2009年3月",
+	"origin": "浙江常山"
+}, {
+	"number": "23",
+	"name": "周岩竹",
+	"gender": "男",
+	"zhixue": "89308490",
+	"yyc": "yc001210823",
+	"ethnic": "汉",
+	"birthday": "2009年6月",
+	"origin": "安徽含山"
+}, {
+	"number": "24",
+	"name": "朱俊哲",
+	"gender": "男",
+	"zhixue": "89308491",
+	"yyc": "yc001210824",
+	"ethnic": "汉",
+	"birthday": "2008年11月",
+	"origin": "浙江台州"
+}, {
+	"number": "25",
+	"name": "朱上元",
+	"gender": "男",
+	"zhixue": "89308492",
+	"yyc": "yc001210825",
+	"ethnic": "汉",
+	"birthday": "2009年2月",
+	"origin": "浙江奉化"
+}, {
+	"number": "26",
+	"name": "诸子豪",
+	"gender": "男",
+	"zhixue": "89308493",
+	"yyc": "yc001210826",
+	"ethnic": "汉",
+	"birthday": "2008年9月",
+	"origin": "浙江杭州"
+}, {
+	"number": "27",
+	"name": "周秉钧",
+	"gender": "男",
+	"zhixue": "89308494",
+	"yyc": "yc001210827",
+	"ethnic": "汉",
+	"birthday": "2008年12月",
+	"origin": "浙江杭州"
+}, {
+	"number": "28",
+	"name": "陈诺",
+	"gender": "女",
+	"zhixue": "89308495",
+	"yyc": "yc001210828",
+	"ethnic": "汉",
+	"birthday": "2009年3月",
+	"origin": "浙江舟山"
+}, {
+	"number": "29",
+	"name": "陈依阳",
+	"gender": "女",
+	"zhixue": "89308496",
+	"yyc": "yc001210829",
+	"ethnic": "汉",
+	"birthday": "2008年9月",
+	"origin": "浙江兰溪"
+}, {
+	"number": "30",
+	"name": "陈语欣",
+	"gender": "女",
+	"zhixue": "89308497",
+	"yyc": "yc001210830",
+	"ethnic": "汉",
+	"birthday": "2009年7月",
+	"origin": "浙江杭州"
+}, {
+	"number": "31",
+	"name": "范奕含",
+	"gender": "女",
+	"zhixue": "89308498",
+	"yyc": "yc001210831",
+	"ethnic": "满",
+	"birthday": "2008年9月",
+	"origin": "河北唐山"
+}, {
+	"number": "32",
+	"name": "桂楷瑞",
+	"gender": "女",
+	"zhixue": "89308499",
+	"yyc": "yc001210832",
+	"ethnic": "汉",
+	"birthday": "2008年1月",
+	"origin": "安徽舒城"
+}, {
+	"number": "33",
+	"name": "韩钰麒",
+	"gender": "女",
+	"zhixue": "89308500",
+	"yyc": "yc001210833",
+	"ethnic": "汉",
+	"birthday": "2009年1月",
+	"origin": "浙江绍兴"
+}, {
+	"number": "34",
+	"name": "金昕玥",
+	"gender": "女",
+	"zhixue": "89308501",
+	"yyc": "yc001210834",
+	"ethnic": "汉",
+	"birthday": "2009年3月",
+	"origin": "浙江平湖"
+}, {
+	"number": "35",
+	"name": "林晨希",
+	"gender": "女",
+	"zhixue": "89308502",
+	"yyc": "yc001210835",
+	"ethnic": "汉",
+	"birthday": "2008年11月",
+	"origin": "福建莆田"
+}, {
+	"number": "36",
+	"name": "刘一",
+	"gender": "女",
+	"zhixue": "89308503",
+	"yyc": "yc001210836",
+	"ethnic": "汉",
+	"birthday": "2008年1月",
+	"origin": "河南郏县"
+}, {
+	"number": "37",
+	"name": "陆钰",
+	"gender": "女",
+	"zhixue": "89308504",
+	"yyc": "yc001210837",
+	"ethnic": "汉",
+	"birthday": "2008年12月",
+	"origin": "浙江嘉兴"
+}, {
+	"number": "38",
+	"name": "牟梓桐",
+	"gender": "女",
+	"zhixue": "89308505",
+	"yyc": "yc001210838",
+	"ethnic": "汉",
+	"birthday": "2008年1月",
+	"origin": "黑龙江齐齐哈尔"
+}, {
+	"number": "39",
+	"name": "任思远",
+	"gender": "女",
+	"zhixue": "89308506",
+	"yyc": "yc001210839",
+	"ethnic": "汉",
+	"birthday": "2009年2月",
+	"origin": "浙江慈溪"
+}, {
+	"number": "40",
+	"name": "沈欣悦",
+	"gender": "女",
+	"zhixue": "89308508",
+	"yyc": "yc001210840",
+	"ethnic": "汉",
+	"birthday": "2009年2月",
+	"origin": "浙江杭州"
+}, {
+	"number": "41",
+	"name": "陶思桐",
+	"gender": "女",
+	"zhixue": "89308509",
+	"yyc": "yc001210841",
+	"ethnic": "壮",
+	"birthday": "2008年11月",
+	"origin": "广西武鸣"
+}, {
+	"number": "42",
+	"name": "王诗尧",
+	"gender": "女",
+	"zhixue": "89308538",
+	"yyc": "yc001210842",
+	"ethnic": "汉",
+	"birthday": "2009年1月",
+	"origin": "山东嘉祥"
+}, {
+	"number": "43",
+	"name": "王思涵",
+	"gender": "女",
+	"zhixue": "89308555",
+	"yyc": "yc001210843",
+	"ethnic": "汉",
+	"birthday": "2009年1月",
+	"origin": "浙江绍兴"
+}, {
+	"number": "44",
+	"name": "王弋书",
+	"gender": "女",
+	"zhixue": "89308745",
+	"yyc": "yc001210844",
+	"ethnic": "汉",
+	"birthday": "2008年12月",
+	"origin": "山东齐河"
+}, {
+	"number": "45",
+	"name": "杨靖澜",
+	"gender": "女",
+	"zhixue": "89308802",
+	"yyc": "yc001210845",
+	"ethnic": "汉",
+	"birthday": "2009年8月",
+	"origin": "浙江绍兴"
+}, {
+	"number": "46",
+	"name": "杨雨晨",
+	"gender": "女",
+	"zhixue": "89308808",
+	"yyc": "yc001210846",
+	"ethnic": "汉",
+	"birthday": "2008年9月",
+	"origin": "宁夏固原"
+}, {
+	"number": "47",
+	"name": "俞苏好",
+	"gender": "女",
+	"zhixue": "89308990",
+	"yyc": "yc001210847",
+	"ethnic": "汉",
+	"birthday": "2008年12月",
+	"origin": "浙江湖州"
+}, {
+	"number": "48",
+	"name": "张浩铭",
+	"gender": "女",
+	"zhixue": "89309978",
+	"yyc": "yc001210848",
+	"ethnic": "汉",
+	"birthday": "2009年1月",
+	"origin": "河南郑州"
+}, {
+	"number": "49",
+	"name": "周奕诺",
+	"gender": "女",
+	"zhixue": "89309984",
+	"yyc": "yc001210849",
+	"ethnic": "汉",
+	"birthday": "2009年4月",
+	"origin": "浙江东阳"
+}]
