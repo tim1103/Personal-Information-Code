@@ -163,7 +163,7 @@
 								扫码时间：<span id="st"></span>
 							</div>
 							<div style="color: #6f6f6f;">
-								V0.3.1 2022年7月15日更新
+								V0.3.2 2022年7月15日更新
 							</div>
 							<!--<div style="color: #6f6f6f;">
 								<a href="https://github.com/tim1103/Personal-Information-Code"
@@ -264,7 +264,9 @@
 			var d = new Date(Date.parse(thetime.replace(/-/g, "/")));
 			var curDate = new Date();
 			if (d <= curDate) {
-				Swal.fire('欢迎使用新版八班码！', '', 'success')
+				if (num != null) {
+					Swal.fire('欢迎使用新版八班码！', '', 'success')
+				}
 			}
 		</script>
 	</body>
