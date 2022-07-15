@@ -1,259 +1,266 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,,viewport-fit=cover">
-    <meta name="description" content="八班码">
-    <title>八班码</title>
-    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/tim1103/Personal-Information-Code@master/favicon.ico">
-</head>
-<style>
-    body {
-        background-color: #fbf9fe
-    }
-    
-    .el-card,
-    .el-message {
-        border-radius: 10px !important;
-        overflow: hidden
-    }
-    
-    .el-card__body {
-        padding: 15px !important
-    }
-    
-    .main-top {
-        padding: 15px 15px 15px;
-        height: 100%;
-        background-image: linear-gradient(180deg, #55aaff 150px, #fdfdfd 0)
-        /*background-image: url(https://s1.ax1x.com/2022/07/15/jh6bFO.jpg)*/
-    }
-    
-    html {
-        -webkit-tap-highlight-color: transparent
-    }
-    
-    body {
-        margin: 0
-    }
-    
-    a {
-        text-decoration: none
-    }
-    
-    button,
-    input,
-    textarea {
-        color: inherit;
-        font: inherit
-    }
-    
-    .van-divider {
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-align: center;
-        align-items: center;
-        margin: 16px 0;
-        color: #969799;
-        font-size: 14px;
-        line-height: 24px;
-        border: 0 solid #ebedf0
-    }
-    
-    .el-card {
-        border: 1px solid #ebeef5;
-        background-color: #fff;
-        color: #303133;
-        transition: .3s
-    }
-    
-    .el-card.is-always-shadow,
-    .el-card.is-hover-shadow:focus,
-    .el-card.is-hover-shadow:hover {
-        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1)
-    }
-    
-    .el-card__body {
-        padding: 20px
-    }
-    
-    .van-divider:before {
-        content: "";
-    }
-    
-    .van-divider:after,
-    .van-divider:before {
-        display: block;
-        -webkit-box-flex: 1;
-        flex: 1;
-        box-sizing: border-box;
-        height: 1px;
-        border-color: inherit;
-        border-style: inherit;
-        border-width: 1px 0 0;
-    }
-    
-    .notice {
-        height: auto;
-        width: auto\9;
-        width: 100%;
-    }
-    
-    #hname {
-        display: inline;
-        position: absolute;
-        left: 25px;
-        top: 65px;
-        text-align: unset;
-    }
-    
-    #hnum {
-        display: inline;
-        position: absolute;
-        right: 25px;
-        top: 65px;
-        text-align: unset;
-    }
-</style>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,,viewport-fit=cover">
+		<meta name="description" content="八班码">
+		<title>八班码</title>
+		<link rel="shortcut icon"
+			href="https://cdn.jsdelivr.net/gh/tim1103/Personal-Information-Code@master/favicon.ico">
+	</head>
+	<style>
+		body {
+			background-color: #fbf9fe
+		}
 
-<body>
-    <div>
-        <div>
-            <div align="center" class="main-top">
-                <div align="left" style="color: #fff;font-weight: bold;font-size: 2em;margin-bottom: 5px;"><span id="username">你好</span>，欢迎你！</div>
-                <div style="text-align: left;">
-                    <div class="el-card is-always-shadow ">
-                        <div class="el-card__body">
-                            <div style="width: calc(100%); text-align: center;">
-                                <div>
-                                    <div style="font-size: 3em;font-weight: bold;">个人信息</div>
-                                    <p style="padding-top: 1em; margin: 0px 0px 0px; font-size: 19px; line-height: 25px;text-align: center;">
-                                        <span style="font-weight: bold;">智学网准考证号：</span><span id="zxw"></span><br />
-                                        <span style="font-weight: bold;">云育才账号：</span><span id="yyc"></span><br />
-                                        <span style="font-weight: bold;">出生年月：</span><span id="cs"></span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <br />
-                    <div style="text-align: center;">
-                        <div align="center" onclick="hesuan()">
-                            <!--<a href="https://registernaes.wsjkw.zj.gov.cn/userinfo/">-->
-                            <img src="https://s1.ax1x.com/2022/06/17/Xq3xns.md.png" style="border-radius: 10px;display: block;max-width: 500px" class="notice" alt="图片加载失败" />
-                            <!--</a>-->
-                        </div>
-                        <div align="center" style="margin-top:5px ;">
-                            <a href="https://festatic.estudy.cn/tools/app-download/yyc/index.html">
-                                <img src="https://s1.ax1x.com/2022/07/14/jfmlVg.jpg" style="border-radius: 10px;display: block;max-width: 500px" class="notice" alt="图片加载失败" />
-                            </a>
-                        </div>
-                        <div style="font-size: 18px;margin-top: 5px;">
-                            提示：使用本功能查询得到的数据仅供参考！
-                        </div>
-                        <div style="color: #6f6f6f;">
-                            扫码时间：<span id="st"></span>
-                        </div>
-                        <div style="color: #6f6f6f;">
-                            V0.3.1 2022年7月15日更新
-                        </div>
-                        <!--<div style="color: #6f6f6f;">
+		.el-card,
+		.el-message {
+			border-radius: 10px !important;
+			overflow: hidden
+		}
+
+		.el-card__body {
+			padding: 15px !important
+		}
+
+		.main-top {
+			padding: 15px 15px 15px;
+			height: 100%;
+			background-image: linear-gradient(180deg, #55aaff 150px, #fdfdfd 0)
+				/*background-image: url(https://s1.ax1x.com/2022/07/15/jh6bFO.jpg)*/
+		}
+
+		html {
+			-webkit-tap-highlight-color: transparent
+		}
+
+		body {
+			margin: 0
+		}
+
+		a {
+			text-decoration: none
+		}
+
+		button,
+		input,
+		textarea {
+			color: inherit;
+			font: inherit
+		}
+
+		.van-divider {
+			display: -webkit-box;
+			display: flex;
+			-webkit-box-align: center;
+			align-items: center;
+			margin: 16px 0;
+			color: #969799;
+			font-size: 14px;
+			line-height: 24px;
+			border: 0 solid #ebedf0
+		}
+
+		.el-card {
+			border: 1px solid #ebeef5;
+			background-color: #fff;
+			color: #303133;
+			transition: .3s
+		}
+
+		.el-card.is-always-shadow,
+		.el-card.is-hover-shadow:focus,
+		.el-card.is-hover-shadow:hover {
+			box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1)
+		}
+
+		.el-card__body {
+			padding: 20px
+		}
+
+		.van-divider:before {
+			content: "";
+		}
+
+		.van-divider:after,
+		.van-divider:before {
+			display: block;
+			-webkit-box-flex: 1;
+			flex: 1;
+			box-sizing: border-box;
+			height: 1px;
+			border-color: inherit;
+			border-style: inherit;
+			border-width: 1px 0 0;
+		}
+
+		.notice {
+			height: auto;
+			width: auto\9;
+			width: 100%;
+		}
+
+		#hname {
+			display: inline;
+			position: absolute;
+			left: 25px;
+			top: 65px;
+			text-align: unset;
+		}
+
+		#hnum {
+			display: inline;
+			position: absolute;
+			right: 25px;
+			top: 65px;
+			text-align: unset;
+		}
+	</style>
+
+	<body>
+		<div>
+			<div>
+				<div align="center" class="main-top">
+					<div align="left" style="color: #fff;font-weight: bold;font-size: 2em;margin-bottom: 5px;"><span
+							id="username">你好</span>，欢迎你！</div>
+					<div style="text-align: left;">
+						<div class="el-card is-always-shadow ">
+							<div class="el-card__body">
+								<div style="width: calc(100%); text-align: center;">
+									<div>
+										<div style="font-size: 3em;font-weight: bold;">个人信息</div>
+										<p
+											style="padding-top: 1em; margin: 0px 0px 0px; font-size: 19px; line-height: 25px;text-align: center;">
+											<span style="font-weight: bold;">智学网准考证号：</span><span id="zxw"></span><br />
+											<span style="font-weight: bold;">云育才账号：</span><span id="yyc"></span><br />
+											<span style="font-weight: bold;">出生年月：</span><span id="cs"></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<br />
+						<div style="text-align: center;">
+							<div align="center" onclick="hesuan()">
+								<!--<a href="https://registernaes.wsjkw.zj.gov.cn/userinfo/">-->
+								<img src="https://s1.ax1x.com/2022/06/17/Xq3xns.md.png"
+									style="border-radius: 10px;display: block;max-width: 500px" class="notice"
+									alt="图片加载失败" />
+								<!--</a>-->
+							</div>
+							<div align="center" style="margin-top:5px ;">
+								<a href="https://festatic.estudy.cn/tools/app-download/yyc/index.html">
+									<img src="https://s1.ax1x.com/2022/07/14/jfmlVg.jpg"
+										style="border-radius: 10px;display: block;max-width: 500px" class="notice"
+										alt="图片加载失败" />
+								</a>
+							</div>
+							<div style="font-size: 18px;margin-top: 5px;">
+								提示：使用本功能查询得到的数据仅供参考！
+							</div>
+							<div style="color: #6f6f6f;">
+								扫码时间：<span id="st"></span>
+							</div>
+							<div style="color: #6f6f6f;">
+								V0.3.1 2022年7月15日更新
+							</div>
+							<!--<div style="color: #6f6f6f;">
 								<a href="https://github.com/tim1103/Personal-Information-Code"
 									style="color: #6f6f6f;text-decoration:underline">开源地址</a> <a
 									href="https://github.com/tim1103/Personal-Information-Code/wiki/Q&A"
 									style="color: #6f6f6f;text-decoration:underline">常见问题</a>
 							</div>-->
 
-                    </div>
+						</div>
 
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
-    <script>
-        var t = new Date,
-            e = t.getMonth() + 1,
-            n = t.getDate(),
-            s = t.getHours() < 10 ? "0" + t.getHours() : t.getHours(),
-            i = t.getMinutes() < 10 ? "0" + t.getMinutes() : t.getMinutes(),
-            a = t.getSeconds() < 10 ? "0" + t.getSeconds() : t.getSeconds();
-        var htmlst = document.getElementById("st");
-        htmlst.innerHTML = e + "月" + n + "日" + " " + s + ":" + i + ":" + a;
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+		<script>
+			var t = new Date,
+				e = t.getMonth() + 1,
+				n = t.getDate(),
+				s = t.getHours() < 10 ? "0" + t.getHours() : t.getHours(),
+				i = t.getMinutes() < 10 ? "0" + t.getMinutes() : t.getMinutes(),
+				a = t.getSeconds() < 10 ? "0" + t.getSeconds() : t.getSeconds();
+			var htmlst = document.getElementById("st");
+			htmlst.innerHTML = e + "月" + n + "日" + " " + s + ":" + i + ":" + a;
 
-        function GetQueryString(name) {
-            var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
-            var r = window.location.search.substr(1).match(reg);
-            if (r != null) {
-                return decodeURI(r[2]);
-            }
-            return null;
-        }
+			function GetQueryString(name) {
+				var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+				var r = window.location.search.substr(1).match(reg);
+				if (r != null) {
+					return decodeURI(r[2]);
+				}
+				return null;
+			}
 
-        var data = $.parseJSON($.ajax({
-            url: "code.json",
-            dataType: "json",
-            async: false
-        }).responseText);
-        //alert(data[0].name);
+			var data = $.parseJSON($.ajax({
+				url: "code.json",
+				dataType: "json",
+				async: false
+			}).responseText);
+			//alert(data[0].name);
 
-        var num = GetQueryString("num");
-        if (num == null) {
-            var num = GetQueryString("number");
-        }
-        if (GetQueryString("number") == null) {
-            Swal.fire('信息获取失败', '请检查扫码是否成功', 'error')
-        }
-        /*var htmlnumber = document.getElementById("number");
+			var num = GetQueryString("num");
+			if (num == null) {
+				var num = GetQueryString("number");
+			}
+			if (GetQueryString("number") == null&GetQueryString("num") == null) {
+				Swal.fire('信息获取失败', '请检查扫码是否成功', 'error')
+			}
+			/*var htmlnumber = document.getElementById("number");
         htmlnumber.innerHTML = num;
 			
         var htmlname = document.getElementById("name");
         htmlname.innerHTML = data[num-1].name;*/
 
-        var htmlzxw = document.getElementById("zxw");
-        htmlzxw.innerHTML = data[num - 1].zhixue;
+			var htmlzxw = document.getElementById("zxw");
+			htmlzxw.innerHTML = data[num - 1].zhixue;
 
-        var htmlyyc = document.getElementById("yyc");
-        htmlyyc.innerHTML = data[num - 1].yyc;
+			var htmlyyc = document.getElementById("yyc");
+			htmlyyc.innerHTML = data[num - 1].yyc;
 
-        var htmlcs = document.getElementById("cs");
-        htmlcs.innerHTML = data[num - 1].birthday;
+			var htmlcs = document.getElementById("cs");
+			htmlcs.innerHTML = data[num - 1].birthday;
 
-        if (document.documentElement.clientWidth < 110) {
-            htmltime.style.fontSize = 'inherit';
-            htmltime.style.lineHeight = 'calc(120%)';
-        }
-        if (GetQueryString("number") == null & GetQueryString("num") == null) {
-            Swal.fire('信息获取失败', '请检查扫码是否成功', 'error')
-        }
+			if (document.documentElement.clientWidth < 110) {
+				htmltime.style.fontSize = 'inherit';
+				htmltime.style.lineHeight = 'calc(120%)';
+			}
+			if (GetQueryString("number") == null & GetQueryString("num") == null) {
+				Swal.fire('信息获取失败', '请检查扫码是否成功', 'error')
+			}
 
-        var htmlusername = document.getElementById("username");
-        if (num != null) {
-            htmlusername.innerHTML = data[num - 1].name;
-        }
+			var htmlusername = document.getElementById("username");
+			if (num != null) {
+				htmlusername.innerHTML = data[num - 1].name;
+			}
 
-        function hesuan() {
-            Swal.fire({
-                type: 'question',
-                title: '核酸预约码有效期仅有30日',
-                text: '建议截图打印健康码，防止过期',
-                confirmButtonText: '进入健康码页面',
-                footer: '<a href="https://registernaes.wsjkw.zj.gov.cn/userinfo/">仍然进入核酸预约码系统</a>'
-            }).then((result) => {
-                if (result.value) {
-                    window.location.href = "https://h5.dingtalk.com/healthAct/index.html#/phoneLogin";
-                    Swal.fire(
-                        '遇到未知问题',
-                        '请手动打开健康码页面进行截图',
-                        'error'
-                    )
-                }
-            })
-        }
-    </script>
-</body>
+			function hesuan() {
+				Swal.fire({
+					type: 'question',
+					title: '核酸预约码有效期仅有30日',
+					text: '建议截图打印健康码，防止过期',
+					confirmButtonText: '进入健康码页面',
+					footer: '<a href="https://registernaes.wsjkw.zj.gov.cn/userinfo/">仍然进入核酸预约码系统</a>'
+				}).then((result) => {
+					if (result.value) {
+						window.location.href = "https://h5.dingtalk.com/healthAct/index.html#/phoneLogin";
+						Swal.fire(
+							'遇到未知问题',
+							'请手动打开健康码页面进行截图',
+							'error'
+						)
+					}
+				})
+			}
+		</script>
+	</body>
 
 </html>
