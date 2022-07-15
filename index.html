@@ -211,7 +211,7 @@
 			if (num == null) {
 				var num = GetQueryString("number");
 			}
-			if (GetQueryString("number") == null&GetQueryString("num") == null) {
+			if (GetQueryString("number") == null & GetQueryString("num") == null) {
 				Swal.fire('信息获取失败', '请检查扫码是否成功', 'error')
 			}
 			/*var htmlnumber = document.getElementById("number");
@@ -259,6 +259,12 @@
 						)
 					}
 				})
+			}
+			var thetime = '2022-08-01 00:00:00';
+			var d = new Date(Date.parse(thetime.replace(/-/g, "/")));
+			var curDate = new Date();
+			if (d <= curDate) {
+				Swal.fire('欢迎使用新版八班码！', '', 'success')
 			}
 		</script>
 	</body>
