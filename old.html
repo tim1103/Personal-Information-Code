@@ -185,7 +185,6 @@
 			</div>
 		</div>
 		</div>
-		<script src="https://cdn.jsdelivr.net/gh/tim1103/Personal-Information-Code/qrcode.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 		<script>
 			var t = new Date,
@@ -238,6 +237,20 @@
 						)
 					}
 				})
+			}
+			var thetime = '2022-08-01 00:00:00';
+			var d = new Date(Date.parse(thetime.replace(/-/g, "/")));
+			var curDate = new Date();
+			if (d < curDate) {
+					Swal.fire({
+					  type: 'error',
+					  title: '请勿使用旧版信息码！',
+					  showConfirmButton: false,
+					  keydownListenerCapture:true,
+					  allowOutsideClick:false,
+					  allowEscapeKey:false,
+					  position:'top'
+					})
 			}
 		</script>
 	</body>
