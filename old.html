@@ -4,254 +4,27 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,,viewport-fit=cover">
 		<meta name="description" content="信息码">
-		<title>信息码</title>
-		<link rel="shortcut icon"
-			href="https://cdn.jsdelivr.net/gh/tim1103/Personal-Information-Code@master/favicon.ico">
+		<title>出现错误</title>
 	</head>
 	<style>
-		body {
-			background-color: #fbf9fe
-		}
-
-		.el-card,
-		.el-message {
-			border-radius: 10px !important;
-			overflow: hidden
-		}
-
-		.el-card__body {
-			padding: 15px !important
-		}
-
-		.main-top {
-			padding: 25px 15px 15px;
-			height: 100%;
-			background-image: linear-gradient(180deg, #4c4ce7 100px, #fdfdfd 0)
-		}
-
 		html {
-			-webkit-tap-highlight-color: transparent
-		}
-
-		body {
-			margin: 0
-		}
-
-		a {
-			text-decoration: none
-		}
-
-		button,
-		input,
-		textarea {
-			color: inherit;
-			font: inherit
-		}
-
-		.van-divider {
-			display: -webkit-box;
-			display: flex;
-			-webkit-box-align: center;
-			align-items: center;
-			margin: 16px 0;
-			color: #969799;
-			font-size: 14px;
-			line-height: 24px;
-			border: 0 solid #ebedf0
-		}
-
-		.el-card {
-			border: 1px solid #ebeef5;
-			background-color: #fff;
-			color: #303133;
-			transition: .3s
-		}
-
-		.el-card.is-always-shadow,
-		.el-card.is-hover-shadow:focus,
-		.el-card.is-hover-shadow:hover {
-			box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1)
-		}
-
-		.el-card__body {
-			padding: 20px
-		}
-
-		.van-divider:before {
-			content: "";
-		}
-
-		.van-divider:after,
-		.van-divider:before {
-			display: block;
-			-webkit-box-flex: 1;
-			flex: 1;
-			box-sizing: border-box;
-			height: 1px;
-			border-color: inherit;
-			border-style: inherit;
-			border-width: 1px 0 0;
-		}
-
-		.notice {
-			height: auto;
-			width: auto\9;
-			width: 100%;
-		}
-
-		#hname {
-			display: inline;
-			position: absolute;
-			left: 25px;
-			top: 30px;
-			text-align: unset;
-		}
-
-		#hnum {
-			display: inline;
-			position: absolute;
-			right: 25px;
-			top: 30px;
-			text-align: unset;
-		}
-
-		#bye {
-			border-radius: 5px !important;
-			overflow: hidden;
-			border: 1px solid #ebeef5;
-			background-color: #fff;
-			color: #fff;
-			transition: .3s;
-			box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
-			margin-top: 10px;
-			padding: 5px;
-			background-color: #ffaa00;
+			background-color: #0000f9;
 		}
 	</style>
 	<body>
-		<div>
-			<div>
-				<div align="center" class="main-top">
-					<div>
-						<div class="el-card is-always-shadow ">
-							<!---->
-							<div class="el-card__body">
-								<div style="width: calc(100%); text-align: center;">
-									<div>
-										<div style="font-weight: 700;" id="hname"><span id="name"></span></div>
-										<div style="font-weight: 700;" id="hnum"><span id="number"></span></div>
-										<p
-											style="padding-top: 1em; margin: 0px 0px 0px; font-size: 17px; line-height: 25px;text-align: center;">
-											<span style="font-weight: 700;">智学网准考证号：</span><span id="zxw"></span><br />
-											<span style="font-weight: 700;">云育才账号：</span><span id="yyc"></span><br />
-										</p>
-									</div>
-								</div>
-							</div>
-
-						</div>
-						<div id="bye">
-							本信息卡即将停用，“八班码”将接替本服务。再见！
-						</div>
-						<!--<div role="separator" class="van-divider van-divider--hairline "></div>-->
-						<br />
-
-						<div style="text-align: center;">
-							<!--<button type="button" onclick="button_click()" style="width: 100%;background-color:#4490f7;border:none;color:white ;height: 35px;border-radius: 17.5px;margin-bottom: 9px;">生成二维码</button>-->
-							<div align="center" onclick="hesuan()">
-								<!--<a href="https://registernaes.wsjkw.zj.gov.cn/userinfo/">-->
-								<img src="https://s1.ax1x.com/2022/06/17/Xq3xns.md.png"
-									style="border-radius: 10px;display: block;max-width: 500px" class="notice"
-									alt="图片加载失败" />
-								<!--</a>-->
-
-							</div>
-							<div align="center" style="margin-top:5px ;">
-								<a href="https://festatic.estudy.cn/tools/app-download/yyc/index.html">
-									<img src="https://s1.ax1x.com/2022/07/14/jfmlVg.jpg"
-										style="border-radius: 10px;display: block;max-width: 500px" class="notice"
-										alt="图片加载失败" />
-								</a>
-							</div>
-							<div style="font-size: 18px;margin-top: 5px;">
-								提示：使用本功能查询得到的数据仅供参考！
-							</div>
-							<div style="color: #6f6f6f;">
-								扫码时间：<span id="st"></span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		</div>
 		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 		<script>
-			var t = new Date,
-				e = t.getMonth() + 1,
-				n = t.getDate(),
-				s = t.getHours() < 10 ? "0" + t.getHours() : t.getHours(),
-				i = t.getMinutes() < 10 ? "0" + t.getMinutes() : t.getMinutes(),
-				a = t.getSeconds() < 10 ? "0" + t.getSeconds() : t.getSeconds();
-			var htmlst = document.getElementById("st");
-			htmlst.innerHTML = e + "月" + n + "日" + " " + s + ":" + i + ":" + a;
-
-			function GetQueryString(name) {
-				var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
-				var r = window.location.search.substr(1).match(reg);
-				if (r != null) {
-					return decodeURI(r[2]);
-				}
-				return null;
-			}
-			var htmlname = document.getElementById("name");
-			htmlname.innerHTML = GetQueryString("name");
-			var htmlnumber = document.getElementById("number");
-			htmlnumber.innerHTML = GetQueryString("number");
-			var htmlzxw = document.getElementById("zxw");
-			htmlzxw.innerHTML = GetQueryString("zxw");
-			var htmlyyc = document.getElementById("yyc");
-			htmlyyc.innerHTML = GetQueryString("yyc");
-			if (document.documentElement.clientWidth < 110) {
-				htmltime.style.fontSize = 'inherit';
-				htmltime.style.lineHeight = 'calc(120%)';
-			}
-			if (GetQueryString("name") == null || GetQueryString("number") == null) {
-				Swal.fire('信息获取失败', '请检查扫码是否成功', 'error')
-			}
-
-			function hesuan() {
-				Swal.fire({
-					type: 'question',
-					title: '核酸预约码有效期仅有30日',
-					text: '建议截图打印健康码，防止过期',
-					confirmButtonText: '进入健康码页面',
-					footer: '<a href="https://registernaes.wsjkw.zj.gov.cn/userinfo/">仍然进入核酸预约码系统</a>'
-				}).then((result) => {
-					if (result.value) {
-						window.location.href = "https://h5.dingtalk.com/healthAct/index.html#/phoneLogin";
-						Swal.fire(
-							'遇到未知问题',
-							'请手动打开健康码页面进行截图',
-							'error'
-						)
-					}
-				})
-			}
-			var thetime = '2022-08-01 00:00:00';
-			var d = new Date(Date.parse(thetime.replace(/-/g, "/")));
-			var curDate = new Date();
-			if (d < curDate) {
+			
 					Swal.fire({
 					  type: 'error',
-					  title: '请勿使用旧版信息码！',
+					  title: '出现错误',
+					  text:'请检查是否扫描了旧版信息卡或错误的二维码',
 					  showConfirmButton: false,
 					  keydownListenerCapture:true,
 					  allowOutsideClick:false,
 					  allowEscapeKey:false,
-					  position:'top'
+					  backdrop:false
 					})
-			}
 		</script>
 	</body>
 </html>
